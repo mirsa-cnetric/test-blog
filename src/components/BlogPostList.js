@@ -46,7 +46,7 @@ class BlogPostList extends React.Component {
     render() {
         return (
             <section className="main-content">
-                <input type="text" placeholder="search" onChange={this.searchPosts.bind(this)} />
+                <input type="text" className="search-box" placeholder="search" onChange={this.searchPosts.bind(this)} />
                 <div className="blog-posts">{this.renderPosts()}</div>
             </section>
         );
